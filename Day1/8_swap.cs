@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void SwapNumbers()
+    {
+        Console.Write("Enter first number: ");
+        int a = int.Parse(Console.ReadLine());
+        
+        Console.Write("Enter second number: ");
+        int b = int.Parse(Console.ReadLine());
+        
+        Console.WriteLine("Before: a=" + a + ", b=" + b);
+        
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        
+        Console.WriteLine("After: a=" + a + ", b=" + b);
+    }
+    
+    static void Main(string[] args)
+    {
+        SwapNumbers();
+    }
+}
